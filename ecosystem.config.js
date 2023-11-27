@@ -1,8 +1,9 @@
 module.exports = {
   apps: [{
     name: 'Shared Portfolio',
-    script: 'server.js',
-    interpreter: 'authbind',
-    args: '--deep node'
+    script: './server.js',
+    interpreter: '/usr/bin/node',
+    args: '',
+    watch: true
   }]
 };
