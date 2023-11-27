@@ -1,4 +1,5 @@
 .markov {
+    display: block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;
     text-align: left;
@@ -30,7 +31,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: lightpink; 
+    font-size: 125%;
+    background-color: rgba(218, 218, 218, 0.2);
+    border-radius: 0.5rem;    
 }
 
 body {
