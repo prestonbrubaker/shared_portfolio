@@ -1,8 +1,7 @@
 module.exports = {
   apps: [{
     name: 'Shared Portfolio',
-    script: 'server.js',
-    interpreter: '/usr/bin/authbind',
-    args: '--deep node'
+    script: '/home/preston/Desktop/shared_portfolio/server.js',
+    interpreter: 'node'
   }]
 };
