@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     // Or res.send('Hello, World!');
 });
 
-const PORT = 58543;
+const PORT = 80;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
