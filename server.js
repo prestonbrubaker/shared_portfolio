@@ -1,26 +1,27 @@
 const express = require('express');
 const path = require('path');
+const https = require('https');
+const fs = require('fs');
+
 const app = express();
 
-// Serve static files from 'public' directory
+// Serve static files (like CSS, JS, images) from a directory named 'public'
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Check the host header to respond to 'markoviandevelopments.com' only
-app.use((req, res, next) => {
-    if (req.hostname === 'markoviandevelopments.com') {
-        next();
-    } else {
-        res.status(404).send('Not Found');
-    }
-});
 
 // Define a route for the root URL ('/')
 app.get('/', (req, res) => {
-    // Send the 'index.html' file for 'markoviandevelopments.com'
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-const PORT = 80;
-app.listen(PORT, () => {
+const PORT = 443;
+
+// SSL certificate paths
+const options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/markoviandevelopments.com/privkey.pem', 'utf8'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/markoviandevelopments.com/cert.pem', 'utf8'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/markoviandevelopments.com/chain.pem', 'utf8')
+};
+
+https.createServer(options, app).listen(PORT, () => {
     console.log(`Server running for markoviandevelopments.com on port ${PORT}`);
 });
