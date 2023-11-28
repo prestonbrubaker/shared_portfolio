@@ -1,0 +1,74 @@
+::selection {
+    background: floralwhite;
+    color: rgb(3, 3, 46);
+}
+
+.markov {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 16rem;
+    margin-top: 14rem;
+}
+
+.filler {
+    margin-left: 16rem;
+}
+
+nav ul {
+    background-color: rgb(3, 3, 46); 
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 0.5rem;
+    margin-right: 4rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+nav ul li {
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: floralwhite; 
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    font-size: 125%;
+    background-color: rgba(218, 218, 218, 0.2);
+    border-radius: 0.5rem;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(3, 3, 46); 
+    color: floralwhite;
+}
+
+.butt {
+    background-color: floralwhite;
+    color: rgb(3, 3, 46);
+    border-radius: 0.5rem;
+}
+
+.butt:hover {
+    font-size: 125%;
+}
+
+.butt:active {
+    cursor: wait;
+}
+
+body {
+    cursor: default;
+}
