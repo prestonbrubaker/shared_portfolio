@@ -12,6 +12,10 @@
     margin-top: 14rem;
 }
 
+.filler {
+    margin-left: 16rem;
+}
+
 nav ul {
     background-color: rgb(3, 3, 46); 
     list-style-type: none;
@@ -51,6 +55,20 @@ body {
     color: floralwhite;
 }
 
-p {
-    
+.butt {
+    background-color: floralwhite;
+    color: rgb(3, 3, 46);
+    border-radius: 0.5rem;
+}
+
+.butt:hover {
+    font-size: 125%;
+}
+
+.butt:active {
+    cursor: wait;
+}
+
+body {
+    cursor: default;
 }
