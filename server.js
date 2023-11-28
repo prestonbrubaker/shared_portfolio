@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-const PORT = 80;
+const PORT = 58540;
 app.listen(PORT, () => {
     console.log(`Server running for markoviandevelopments.com on port ${PORT}`);
 });
