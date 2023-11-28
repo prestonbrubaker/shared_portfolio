@@ -72,3 +72,11 @@ body {
 body {
     cursor: default;
 }
+
+.x {
+    padding: 1rem;
+}
+
+.github {
+    padding: 1rem;
+}
